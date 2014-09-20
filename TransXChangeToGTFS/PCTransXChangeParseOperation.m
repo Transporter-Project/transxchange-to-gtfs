@@ -30,11 +30,11 @@
 
 - (void)start
 {
-//    self.agencies = [[PCGTFSAgencies alloc] initWithTransXChangeDocument:self.document];
-//    self.stops = [[PCGTFSStops alloc] initWithTransXChangeDocument:self.document];
-//    self.routes = [[PCGTFSRoutes alloc] initWithTransXChangeDocument:self.document];
-//    self.trips = [[PCGTFSTrips alloc] initWithTransXChangeDocument:self.document];
-//    self.stopTimes = [[PCGTFSStopTimes alloc] initWithTransXChangeDocument:self.document];
+    self.agencies = [[PCGTFSAgencies alloc] initWithTransXChangeDocument:self.document];
+    self.stops = [[PCGTFSStops alloc] initWithTransXChangeDocument:self.document];
+    self.routes = [[PCGTFSRoutes alloc] initWithTransXChangeDocument:self.document];
+    self.trips = [[PCGTFSTrips alloc] initWithTransXChangeDocument:self.document];
+    self.stopTimes = [[PCGTFSStopTimes alloc] initWithTransXChangeDocument:self.document];
     self.calendar = [[PCGTFSCalendar alloc] initWithTransXChangeDocument:self.document];
 }
 
