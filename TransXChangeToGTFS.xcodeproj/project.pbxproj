@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		133B5DCC19CDBDE2009FA133 /* PCGTFSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B5DCB19CDBDE2009FA133 /* PCGTFSCalendar.m */; };
+		133B5DCF19CDCAEE009FA133 /* PCTransXChangeParseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B5DCE19CDCAEE009FA133 /* PCTransXChangeParseQueue.m */; };
 		134069C719C5FB5300E931E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134069C619C5FB5300E931E8 /* Cocoa.framework */; };
 		134069D119C5FB5300E931E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 134069CF19C5FB5300E931E8 /* InfoPlist.strings */; };
 		134069D319C5FB5300E931E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 134069D219C5FB5300E931E8 /* main.m */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		133B5DCA19CDBDE2009FA133 /* PCGTFSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSCalendar.h; sourceTree = "<group>"; };
 		133B5DCB19CDBDE2009FA133 /* PCGTFSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSCalendar.m; sourceTree = "<group>"; };
+		133B5DCD19CDCAEE009FA133 /* PCTransXChangeParseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCTransXChangeParseQueue.h; sourceTree = "<group>"; };
+		133B5DCE19CDCAEE009FA133 /* PCTransXChangeParseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCTransXChangeParseQueue.m; sourceTree = "<group>"; };
 		134069C319C5FB5300E931E8 /* TransXChangeToGTFS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransXChangeToGTFS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		134069C619C5FB5300E931E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		134069C919C5FB5300E931E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -156,10 +159,12 @@
 		134069CC19C5FB5300E931E8 /* TransXChangeToGTFS */ = {
 			isa = PBXGroup;
 			children = (
-				134069D819C5FB5300E931E8 /* PCAppDelegate.h */,
-				134069D919C5FB5300E931E8 /* PCAppDelegate.m */,
 				13406A1219C600BF00E931E8 /* PCTransXChangeKit.h */,
 				13406A1919C63A2500E931E8 /* PCTransXChangeDefines.h */,
+				134069D819C5FB5300E931E8 /* PCAppDelegate.h */,
+				134069D919C5FB5300E931E8 /* PCAppDelegate.m */,
+				133B5DCD19CDCAEE009FA133 /* PCTransXChangeParseQueue.h */,
+				133B5DCE19CDCAEE009FA133 /* PCTransXChangeParseQueue.m */,
 				13406A0019C5FC3800E931E8 /* PCTransXChangeParseOperation.h */,
 				13406A0119C5FC3800E931E8 /* PCTransXChangeParseOperation.m */,
 				13406A0919C5FEB900E931E8 /* Models */,
@@ -334,6 +339,7 @@
 				13406A0C19C5FF6C00E931E8 /* PCGTFSAgencies.m in Sources */,
 				13406A0519C5FE5A00E931E8 /* PCGTFSObject.m in Sources */,
 				134069D319C5FB5300E931E8 /* main.m in Sources */,
+				133B5DCF19CDCAEE009FA133 /* PCTransXChangeParseQueue.m in Sources */,
 				134069FD19C5FB6300E931E8 /* ONOXMLDocument.m in Sources */,
 				13406A0219C5FC3800E931E8 /* PCTransXChangeParseOperation.m in Sources */,
 				13406A1819C6347400E931E8 /* PCGTFSRoutes.m in Sources */,

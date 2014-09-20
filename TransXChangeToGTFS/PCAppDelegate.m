@@ -7,7 +7,6 @@
 //
 
 #import "PCAppDelegate.h"
-#import "PCTransXChangeKit.h"
 
 @implementation PCAppDelegate
 
@@ -17,8 +16,10 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"bmth" ofType:@"xml"];
     PCTransXChangeDocument *document = [PCTransXChangeDocument documentWithPath:path];
-    PCTransXChangeParseOperation *operation = [PCTransXChangeParseOperation operationWithTransXChangeDocument:document];
-    [operation start];
+    
+    
+    
+//    [operation start];
 }
 
 @end
