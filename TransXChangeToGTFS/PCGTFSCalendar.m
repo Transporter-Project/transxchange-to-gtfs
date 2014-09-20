@@ -77,6 +77,15 @@
                 }
             }];
             
+            ONOXMLElement *serviceElement = [self serviceElementForServiceCode:lineRef];
+            ONOXMLElement *operatingPeriodElement = [serviceElement firstChildWithTag:@"OperatingPeriod"];
+            
+            NSString *startDateString = [[operatingPeriodElement firstChildWithTag:@"StartDate"] stringValue];
+            NSString *endDateString = [[operatingPeriodElement firstChildWithTag:@"EndDate"] stringValue];
+            
+            calendar[PCGTFSCalendarStartDateKey] = [startDateString stringByReplacingOccurrencesOfString:@"-" withString:@""];
+            calendar[PCGTFSCalendarEndDateKey] = [endDateString stringByReplacingOccurrencesOfString:@"-" withString:@""];
+            
             [currentServiceIdentifiers addObject:lineRef];
             [calendars addObject:calendar];
         }
@@ -85,6 +94,20 @@
     self.calendars = calendars;
             
     NSLog(@"Calendars: %@", self.calendars);
+}
+
+- (ONOXMLElement *)serviceElementForServiceCode:(NSString *)serviceCode
+{
+    __block ONOXMLElement *selectedElement = nil;
+    
+    [[[self.document.rootElement firstChildWithTag:@"Services"] childrenWithTag:@"Service"] enumerateObjectsUsingBlock:^(ONOXMLElement *serviceElement, NSUInteger idx, BOOL *stop) {
+        
+        if ([[[serviceElement firstChildWithTag:@"ServiceCode"] stringValue] isEqualToString:serviceCode]) {
+            selectedElement = serviceElement;
+        }
+    }];
+    
+    return selectedElement;
 }
 
 @end

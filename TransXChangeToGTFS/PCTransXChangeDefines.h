@@ -62,3 +62,5 @@ static NSString * const PCGTFSCalendarThursdayKey = @"thursday";
 static NSString * const PCGTFSCalendarFridayKey = @"friday";
 static NSString * const PCGTFSCalendarSaturdayKey = @"saturday";
 static NSString * const PCGTFSCalendarSundayKey = @"sunday";
+static NSString * const PCGTFSCalendarStartDateKey = @"start_date";
+static NSString * const PCGTFSCalendarEndDateKey = @"end_date";
