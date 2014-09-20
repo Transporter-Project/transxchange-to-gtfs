@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		134069C719C5FB5300E931E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134069C619C5FB5300E931E8 /* Cocoa.framework */; };
+		134069D119C5FB5300E931E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 134069CF19C5FB5300E931E8 /* InfoPlist.strings */; };
+		134069D319C5FB5300E931E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 134069D219C5FB5300E931E8 /* main.m */; };
+		134069D719C5FB5300E931E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 134069D519C5FB5300E931E8 /* Credits.rtf */; };
+		134069DA19C5FB5300E931E8 /* PCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 134069D919C5FB5300E931E8 /* PCAppDelegate.m */; };
+		134069DD19C5FB5300E931E8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 134069DB19C5FB5300E931E8 /* MainMenu.xib */; };
+		134069DF19C5FB5300E931E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134069DE19C5FB5300E931E8 /* Images.xcassets */; };
+		134069E619C5FB5300E931E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134069E519C5FB5300E931E8 /* XCTest.framework */; };
+		134069E719C5FB5300E931E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134069C619C5FB5300E931E8 /* Cocoa.framework */; };
+		134069EF19C5FB5300E931E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 134069ED19C5FB5300E931E8 /* InfoPlist.strings */; };
+		134069F119C5FB5300E931E8 /* TransXChangeToGTFSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 134069F019C5FB5300E931E8 /* TransXChangeToGTFSTests.m */; };
+		134069FD19C5FB6300E931E8 /* ONOXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 134069FC19C5FB6300E931E8 /* ONOXMLDocument.m */; };
+		134069FF19C5FB7A00E931E8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 134069FE19C5FB7A00E931E8 /* libxml2.dylib */; };
+		13406A0219C5FC3800E931E8 /* PCTransXChangeParseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A0119C5FC3800E931E8 /* PCTransXChangeParseOperation.m */; };
+		13406A0519C5FE5A00E931E8 /* PCGTFSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A0419C5FE5A00E931E8 /* PCGTFSObject.m */; };
+		13406A0819C5FE9400E931E8 /* PCTransXChangeDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A0719C5FE9400E931E8 /* PCTransXChangeDocument.m */; };
+		13406A0C19C5FF6C00E931E8 /* PCGTFSAgencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A0B19C5FF6C00E931E8 /* PCGTFSAgencies.m */; };
+		13406A0F19C5FFA800E931E8 /* PCGTFSStops.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A0E19C5FFA800E931E8 /* PCGTFSStops.m */; };
+		13406A1119C5FFD800E931E8 /* another.xml in Resources */ = {isa = PBXBuildFile; fileRef = 13406A1019C5FFD800E931E8 /* another.xml */; };
+		13406A1519C6327200E931E8 /* bmth.xml in Resources */ = {isa = PBXBuildFile; fileRef = 13406A1419C6327200E931E8 /* bmth.xml */; };
+		13406A1819C6347400E931E8 /* PCGTFSRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A1719C6347400E931E8 /* PCGTFSRoutes.m */; };
+		13406A1C19C63BED00E931E8 /* PCGTFSTrips.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A1B19C63BED00E931E8 /* PCGTFSTrips.m */; };
+		13406A1F19C64D2500E931E8 /* PCGTFSStopTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A1E19C64D2500E931E8 /* PCGTFSStopTimes.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		134069E819C5FB5300E931E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 134069BB19C5FB5300E931E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 134069C219C5FB5300E931E8;
+			remoteInfo = TransXChangeToGTFS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		134069C319C5FB5300E931E8 /* TransXChangeToGTFS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransXChangeToGTFS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		134069C619C5FB5300E931E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		134069C919C5FB5300E931E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		134069CA19C5FB5300E931E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		134069CB19C5FB5300E931E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		134069CE19C5FB5300E931E8 /* TransXChangeToGTFS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransXChangeToGTFS-Info.plist"; sourceTree = "<group>"; };
+		134069D019C5FB5300E931E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		134069D219C5FB5300E931E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		134069D419C5FB5300E931E8 /* TransXChangeToGTFS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TransXChangeToGTFS-Prefix.pch"; sourceTree = "<group>"; };
+		134069D619C5FB5300E931E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		134069D819C5FB5300E931E8 /* PCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCAppDelegate.h; sourceTree = "<group>"; };
+		134069D919C5FB5300E931E8 /* PCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCAppDelegate.m; sourceTree = "<group>"; };
+		134069DC19C5FB5300E931E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		134069DE19C5FB5300E931E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		134069E419C5FB5300E931E8 /* TransXChangeToGTFSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransXChangeToGTFSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		134069E519C5FB5300E931E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		134069EC19C5FB5300E931E8 /* TransXChangeToGTFSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransXChangeToGTFSTests-Info.plist"; sourceTree = "<group>"; };
+		134069EE19C5FB5300E931E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		134069F019C5FB5300E931E8 /* TransXChangeToGTFSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransXChangeToGTFSTests.m; sourceTree = "<group>"; };
+		134069FA19C5FB6300E931E8 /* Ono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ono.h; sourceTree = "<group>"; };
+		134069FB19C5FB6300E931E8 /* ONOXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONOXMLDocument.h; sourceTree = "<group>"; };
+		134069FC19C5FB6300E931E8 /* ONOXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONOXMLDocument.m; sourceTree = "<group>"; };
+		134069FE19C5FB7A00E931E8 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		13406A0019C5FC3800E931E8 /* PCTransXChangeParseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCTransXChangeParseOperation.h; sourceTree = "<group>"; };
+		13406A0119C5FC3800E931E8 /* PCTransXChangeParseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCTransXChangeParseOperation.m; sourceTree = "<group>"; };
+		13406A0319C5FE5A00E931E8 /* PCGTFSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSObject.h; sourceTree = "<group>"; };
+		13406A0419C5FE5A00E931E8 /* PCGTFSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSObject.m; sourceTree = "<group>"; };
+		13406A0619C5FE9400E931E8 /* PCTransXChangeDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCTransXChangeDocument.h; sourceTree = "<group>"; };
+		13406A0719C5FE9400E931E8 /* PCTransXChangeDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCTransXChangeDocument.m; sourceTree = "<group>"; };
+		13406A0A19C5FF6C00E931E8 /* PCGTFSAgencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSAgencies.h; sourceTree = "<group>"; };
+		13406A0B19C5FF6C00E931E8 /* PCGTFSAgencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSAgencies.m; sourceTree = "<group>"; };
+		13406A0D19C5FFA800E931E8 /* PCGTFSStops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSStops.h; sourceTree = "<group>"; };
+		13406A0E19C5FFA800E931E8 /* PCGTFSStops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSStops.m; sourceTree = "<group>"; };
+		13406A1019C5FFD800E931E8 /* another.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = another.xml; sourceTree = "<group>"; };
+		13406A1219C600BF00E931E8 /* PCTransXChangeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCTransXChangeKit.h; sourceTree = "<group>"; };
+		13406A1419C6327200E931E8 /* bmth.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bmth.xml; sourceTree = "<group>"; };
+		13406A1619C6347400E931E8 /* PCGTFSRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSRoutes.h; sourceTree = "<group>"; };
+		13406A1719C6347400E931E8 /* PCGTFSRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSRoutes.m; sourceTree = "<group>"; };
+		13406A1919C63A2500E931E8 /* PCTransXChangeDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCTransXChangeDefines.h; sourceTree = "<group>"; };
+		13406A1A19C63BED00E931E8 /* PCGTFSTrips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSTrips.h; sourceTree = "<group>"; };
+		13406A1B19C63BED00E931E8 /* PCGTFSTrips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSTrips.m; sourceTree = "<group>"; };
+		13406A1D19C64D2500E931E8 /* PCGTFSStopTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSStopTimes.h; sourceTree = "<group>"; };
+		13406A1E19C64D2500E931E8 /* PCGTFSStopTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSStopTimes.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		134069C019C5FB5300E931E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134069FF19C5FB7A00E931E8 /* libxml2.dylib in Frameworks */,
+				134069C719C5FB5300E931E8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134069E119C5FB5300E931E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134069E719C5FB5300E931E8 /* Cocoa.framework in Frameworks */,
+				134069E619C5FB5300E931E8 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134069BA19C5FB5300E931E8 = {
+			isa = PBXGroup;
+			children = (
+				134069CC19C5FB5300E931E8 /* TransXChangeToGTFS */,
+				134069EA19C5FB5300E931E8 /* TransXChangeToGTFSTests */,
+				134069C519C5FB5300E931E8 /* Frameworks */,
+				134069C419C5FB5300E931E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		134069C419C5FB5300E931E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134069C319C5FB5300E931E8 /* TransXChangeToGTFS.app */,
+				134069E419C5FB5300E931E8 /* TransXChangeToGTFSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		134069C519C5FB5300E931E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				134069FE19C5FB7A00E931E8 /* libxml2.dylib */,
+				134069C619C5FB5300E931E8 /* Cocoa.framework */,
+				134069E519C5FB5300E931E8 /* XCTest.framework */,
+				134069C819C5FB5300E931E8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		134069C819C5FB5300E931E8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				134069C919C5FB5300E931E8 /* AppKit.framework */,
+				134069CA19C5FB5300E931E8 /* CoreData.framework */,
+				134069CB19C5FB5300E931E8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		134069CC19C5FB5300E931E8 /* TransXChangeToGTFS */ = {
+			isa = PBXGroup;
+			children = (
+				134069D819C5FB5300E931E8 /* PCAppDelegate.h */,
+				134069D919C5FB5300E931E8 /* PCAppDelegate.m */,
+				13406A1219C600BF00E931E8 /* PCTransXChangeKit.h */,
+				13406A1919C63A2500E931E8 /* PCTransXChangeDefines.h */,
+				13406A0019C5FC3800E931E8 /* PCTransXChangeParseOperation.h */,
+				13406A0119C5FC3800E931E8 /* PCTransXChangeParseOperation.m */,
+				13406A0919C5FEB900E931E8 /* Models */,
+				134069DB19C5FB5300E931E8 /* MainMenu.xib */,
+				134069DE19C5FB5300E931E8 /* Images.xcassets */,
+				134069CD19C5FB5300E931E8 /* Supporting Files */,
+			);
+			path = TransXChangeToGTFS;
+			sourceTree = "<group>";
+		};
+		134069CD19C5FB5300E931E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13406A1419C6327200E931E8 /* bmth.xml */,
+				13406A1019C5FFD800E931E8 /* another.xml */,
+				134069FA19C5FB6300E931E8 /* Ono.h */,
+				134069FB19C5FB6300E931E8 /* ONOXMLDocument.h */,
+				134069FC19C5FB6300E931E8 /* ONOXMLDocument.m */,
+				134069CE19C5FB5300E931E8 /* TransXChangeToGTFS-Info.plist */,
+				134069CF19C5FB5300E931E8 /* InfoPlist.strings */,
+				134069D219C5FB5300E931E8 /* main.m */,
+				134069D419C5FB5300E931E8 /* TransXChangeToGTFS-Prefix.pch */,
+				134069D519C5FB5300E931E8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		134069EA19C5FB5300E931E8 /* TransXChangeToGTFSTests */ = {
+			isa = PBXGroup;
+			children = (
+				134069F019C5FB5300E931E8 /* TransXChangeToGTFSTests.m */,
+				134069EB19C5FB5300E931E8 /* Supporting Files */,
+			);
+			path = TransXChangeToGTFSTests;
+			sourceTree = "<group>";
+		};
+		134069EB19C5FB5300E931E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				134069EC19C5FB5300E931E8 /* TransXChangeToGTFSTests-Info.plist */,
+				134069ED19C5FB5300E931E8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13406A0919C5FEB900E931E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13406A0619C5FE9400E931E8 /* PCTransXChangeDocument.h */,
+				13406A0719C5FE9400E931E8 /* PCTransXChangeDocument.m */,
+				13406A0319C5FE5A00E931E8 /* PCGTFSObject.h */,
+				13406A0419C5FE5A00E931E8 /* PCGTFSObject.m */,
+				13406A0A19C5FF6C00E931E8 /* PCGTFSAgencies.h */,
+				13406A0B19C5FF6C00E931E8 /* PCGTFSAgencies.m */,
+				13406A0D19C5FFA800E931E8 /* PCGTFSStops.h */,
+				13406A0E19C5FFA800E931E8 /* PCGTFSStops.m */,
+				13406A1619C6347400E931E8 /* PCGTFSRoutes.h */,
+				13406A1719C6347400E931E8 /* PCGTFSRoutes.m */,
+				13406A1A19C63BED00E931E8 /* PCGTFSTrips.h */,
+				13406A1B19C63BED00E931E8 /* PCGTFSTrips.m */,
+				13406A1D19C64D2500E931E8 /* PCGTFSStopTimes.h */,
+				13406A1E19C64D2500E931E8 /* PCGTFSStopTimes.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		134069C219C5FB5300E931E8 /* TransXChangeToGTFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134069F419C5FB5300E931E8 /* Build configuration list for PBXNativeTarget "TransXChangeToGTFS" */;
+			buildPhases = (
+				134069BF19C5FB5300E931E8 /* Sources */,
+				134069C019C5FB5300E931E8 /* Frameworks */,
+				134069C119C5FB5300E931E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransXChangeToGTFS;
+			productName = TransXChangeToGTFS;
+			productReference = 134069C319C5FB5300E931E8 /* TransXChangeToGTFS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		134069E319C5FB5300E931E8 /* TransXChangeToGTFSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134069F719C5FB5300E931E8 /* Build configuration list for PBXNativeTarget "TransXChangeToGTFSTests" */;
+			buildPhases = (
+				134069E019C5FB5300E931E8 /* Sources */,
+				134069E119C5FB5300E931E8 /* Frameworks */,
+				134069E219C5FB5300E931E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				134069E919C5FB5300E931E8 /* PBXTargetDependency */,
+			);
+			name = TransXChangeToGTFSTests;
+			productName = TransXChangeToGTFSTests;
+			productReference = 134069E419C5FB5300E931E8 /* TransXChangeToGTFSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		134069BB19C5FB5300E931E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Phillip Caudell";
+				TargetAttributes = {
+					134069E319C5FB5300E931E8 = {
+						TestTargetID = 134069C219C5FB5300E931E8;
+					};
+				};
+			};
+			buildConfigurationList = 134069BE19C5FB5300E931E8 /* Build configuration list for PBXProject "TransXChangeToGTFS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 134069BA19C5FB5300E931E8;
+			productRefGroup = 134069C419C5FB5300E931E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				134069C219C5FB5300E931E8 /* TransXChangeToGTFS */,
+				134069E319C5FB5300E931E8 /* TransXChangeToGTFSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		134069C119C5FB5300E931E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13406A1519C6327200E931E8 /* bmth.xml in Resources */,
+				13406A1119C5FFD800E931E8 /* another.xml in Resources */,
+				134069D119C5FB5300E931E8 /* InfoPlist.strings in Resources */,
+				134069DF19C5FB5300E931E8 /* Images.xcassets in Resources */,
+				134069D719C5FB5300E931E8 /* Credits.rtf in Resources */,
+				134069DD19C5FB5300E931E8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134069E219C5FB5300E931E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134069EF19C5FB5300E931E8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		134069BF19C5FB5300E931E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13406A0F19C5FFA800E931E8 /* PCGTFSStops.m in Sources */,
+				13406A0C19C5FF6C00E931E8 /* PCGTFSAgencies.m in Sources */,
+				13406A0519C5FE5A00E931E8 /* PCGTFSObject.m in Sources */,
+				134069D319C5FB5300E931E8 /* main.m in Sources */,
+				134069FD19C5FB6300E931E8 /* ONOXMLDocument.m in Sources */,
+				13406A0219C5FC3800E931E8 /* PCTransXChangeParseOperation.m in Sources */,
+				13406A1819C6347400E931E8 /* PCGTFSRoutes.m in Sources */,
+				134069DA19C5FB5300E931E8 /* PCAppDelegate.m in Sources */,
+				13406A1F19C64D2500E931E8 /* PCGTFSStopTimes.m in Sources */,
+				13406A0819C5FE9400E931E8 /* PCTransXChangeDocument.m in Sources */,
+				13406A1C19C63BED00E931E8 /* PCGTFSTrips.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134069E019C5FB5300E931E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134069F119C5FB5300E931E8 /* TransXChangeToGTFSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		134069E919C5FB5300E931E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 134069C219C5FB5300E931E8 /* TransXChangeToGTFS */;
+			targetProxy = 134069E819C5FB5300E931E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		134069CF19C5FB5300E931E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				134069D019C5FB5300E931E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		134069D519C5FB5300E931E8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				134069D619C5FB5300E931E8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		134069DB19C5FB5300E931E8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				134069DC19C5FB5300E931E8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		134069ED19C5FB5300E931E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				134069EE19C5FB5300E931E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		134069F219C5FB5300E931E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		134069F319C5FB5300E931E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		134069F519C5FB5300E931E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransXChangeToGTFS/TransXChangeToGTFS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = "TransXChangeToGTFS/TransXChangeToGTFS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		134069F619C5FB5300E931E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransXChangeToGTFS/TransXChangeToGTFS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = "TransXChangeToGTFS/TransXChangeToGTFS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		134069F819C5FB5300E931E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TransXChangeToGTFS.app/Contents/MacOS/TransXChangeToGTFS";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransXChangeToGTFS/TransXChangeToGTFS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TransXChangeToGTFSTests/TransXChangeToGTFSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		134069F919C5FB5300E931E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TransXChangeToGTFS.app/Contents/MacOS/TransXChangeToGTFS";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransXChangeToGTFS/TransXChangeToGTFS-Prefix.pch";
+				INFOPLIST_FILE = "TransXChangeToGTFSTests/TransXChangeToGTFSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		134069BE19C5FB5300E931E8 /* Build configuration list for PBXProject "TransXChangeToGTFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134069F219C5FB5300E931E8 /* Debug */,
+				134069F319C5FB5300E931E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		134069F419C5FB5300E931E8 /* Build configuration list for PBXNativeTarget "TransXChangeToGTFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134069F519C5FB5300E931E8 /* Debug */,
+				134069F619C5FB5300E931E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		134069F719C5FB5300E931E8 /* Build configuration list for PBXNativeTarget "TransXChangeToGTFSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134069F819C5FB5300E931E8 /* Debug */,
+				134069F919C5FB5300E931E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 134069BB19C5FB5300E931E8 /* Project object */;
+}
