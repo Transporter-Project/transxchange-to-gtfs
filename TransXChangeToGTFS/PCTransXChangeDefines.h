@@ -53,3 +53,12 @@ static NSString * const PCGTFSTripIdentifierKey = @"trip_id";
 static NSString * const PCGTFSStopTimesArrivalTimeKey = @"arrival_time";
 static NSString * const PCGTFSStopTimesDepartureTimeKey = @"departure_time";
 static NSString * const PCGTFSStopTimesSequenceKey = @"stop_sequence";
+
+// Calendar
+static NSString * const PCGTFSCalendarMondayKey = @"monday";
+static NSString * const PCGTFSCalendarTuesdayKey = @"tuesday";
+static NSString * const PCGTFSCalendarWednesdayKey = @"wednesday";
+static NSString * const PCGTFSCalendarThursdayKey = @"thursday";
+static NSString * const PCGTFSCalendarFridayKey = @"friday";
+static NSString * const PCGTFSCalendarSaturdayKey = @"saturday";
+static NSString * const PCGTFSCalendarSundayKey = @"sunday";

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133B5DCC19CDBDE2009FA133 /* PCGTFSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B5DCB19CDBDE2009FA133 /* PCGTFSCalendar.m */; };
 		134069C719C5FB5300E931E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134069C619C5FB5300E931E8 /* Cocoa.framework */; };
 		134069D119C5FB5300E931E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 134069CF19C5FB5300E931E8 /* InfoPlist.strings */; };
 		134069D319C5FB5300E931E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 134069D219C5FB5300E931E8 /* main.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133B5DCA19CDBDE2009FA133 /* PCGTFSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSCalendar.h; sourceTree = "<group>"; };
+		133B5DCB19CDBDE2009FA133 /* PCGTFSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSCalendar.m; sourceTree = "<group>"; };
 		134069C319C5FB5300E931E8 /* TransXChangeToGTFS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransXChangeToGTFS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		134069C619C5FB5300E931E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		134069C919C5FB5300E931E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -219,6 +222,8 @@
 				13406A1B19C63BED00E931E8 /* PCGTFSTrips.m */,
 				13406A1D19C64D2500E931E8 /* PCGTFSStopTimes.h */,
 				13406A1E19C64D2500E931E8 /* PCGTFSStopTimes.m */,
+				133B5DCA19CDBDE2009FA133 /* PCGTFSCalendar.h */,
+				133B5DCB19CDBDE2009FA133 /* PCGTFSCalendar.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133B5DCC19CDBDE2009FA133 /* PCGTFSCalendar.m in Sources */,
 				13406A0F19C5FFA800E931E8 /* PCGTFSStops.m in Sources */,
 				13406A0C19C5FF6C00E931E8 /* PCGTFSAgencies.m in Sources */,
 				13406A0519C5FE5A00E931E8 /* PCGTFSObject.m in Sources */,
@@ -559,6 +565,7 @@
 				134069F619C5FB5300E931E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		134069F719C5FB5300E931E8 /* Build configuration list for PBXNativeTarget "TransXChangeToGTFSTests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +574,7 @@
 				134069F919C5FB5300E931E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

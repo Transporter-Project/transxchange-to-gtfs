@@ -15,3 +15,4 @@
 #import "PCGTFSRoutes.h"
 #import "PCGTFSTrips.h"
 #import "PCGTFSStopTimes.h"
+#import "PCGTFSCalendar.h"
