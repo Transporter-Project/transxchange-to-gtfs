@@ -36,8 +36,10 @@
             
             // Make an identifier by combining journey code and departure time
             trip[PCGTFSTripIdentifierKey] = [NSString stringWithFormat:@"%@-%@", vehicleJourneyCode, departureTime];
+            
             trip[PCGTFSRouteIdentifierKey] = [[serviceElement firstChildWithTag:@"ServiceCode"] stringValue];
-            trip[PCGTFSServiceIdentifierKey] = [[serviceElement firstChildWithTag:@"ServiceCode"] stringValue];
+            
+            trip[PCGTFSServiceIdentifierKey] = [[vehicleJourneyElement firstChildWithTag:@"VehicleJourneyCode"] stringValue];
 
             PCGTFSTripDirection direction = [self directionForTransXChangeDirection:[[journeyPatternElement firstChildWithTag:@"Direction"] stringValue]];
             trip[PCGTFSDirectionIdentifierKey] = @(direction);
@@ -58,7 +60,7 @@
     
     self.trips = trips;
     
-    NSLog(@"Trips: %@", trips);
+//    NSLog(@"Trips: %@", trips);
 }
 
 - (ONOXMLElement *)journeyPatternElementForRef:(NSString *)ref withService:(ONOXMLElement *)standardServiceElement

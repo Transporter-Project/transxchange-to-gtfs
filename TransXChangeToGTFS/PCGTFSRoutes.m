@@ -39,7 +39,7 @@
     
     self.routes = routes;
     
-    NSLog(@"Routes: %@", self.routes);
+//    NSLog(@"Routes: %@", self.routes);
 }
 
 - (PCGTFSRouteType)routeTypeForTransXChangeMode:(NSString *)mode

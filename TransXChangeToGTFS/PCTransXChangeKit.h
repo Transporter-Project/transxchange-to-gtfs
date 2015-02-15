@@ -7,6 +7,7 @@
 //
 
 #import "PCTransXChangeDefines.h"
+#import "PCTransXChangeParseQueue.h"
 #import "PCTransXChangeParseOperation.h"
 #import "PCTransXChangeDocument.h" 
 #import "PCGTFSObject.h"

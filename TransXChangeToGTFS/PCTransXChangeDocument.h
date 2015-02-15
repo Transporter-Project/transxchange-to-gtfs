@@ -10,6 +10,8 @@
 
 @interface PCTransXChangeDocument : ONOXMLDocument
 
+@property (nonatomic, strong) NSString *path;
+
 + (instancetype)documentWithPath:(NSString *)path;
 
 @end
