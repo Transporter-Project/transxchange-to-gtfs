@@ -14,6 +14,7 @@
 {
     NSData *data = [NSData dataWithContentsOfFile:path];
     PCTransXChangeDocument *document = [PCTransXChangeDocument XMLDocumentWithData:data error:nil];
+    document.path = path;
     
     return document;
 }

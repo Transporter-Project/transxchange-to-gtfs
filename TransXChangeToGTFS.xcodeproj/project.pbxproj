@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133B5DCC19CDBDE2009FA133 /* PCGTFSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B5DCB19CDBDE2009FA133 /* PCGTFSCalendar.m */; };
+		133B5DCF19CDCAEE009FA133 /* PCTransXChangeParseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B5DCE19CDCAEE009FA133 /* PCTransXChangeParseQueue.m */; };
+		133B5DD219CDE201009FA133 /* PCCSVBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 133B5DD119CDE201009FA133 /* PCCSVBuilder.m */; };
 		134069C719C5FB5300E931E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134069C619C5FB5300E931E8 /* Cocoa.framework */; };
 		134069D119C5FB5300E931E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 134069CF19C5FB5300E931E8 /* InfoPlist.strings */; };
 		134069D319C5FB5300E931E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 134069D219C5FB5300E931E8 /* main.m */; };
@@ -25,11 +28,17 @@
 		13406A0819C5FE9400E931E8 /* PCTransXChangeDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A0719C5FE9400E931E8 /* PCTransXChangeDocument.m */; };
 		13406A0C19C5FF6C00E931E8 /* PCGTFSAgencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A0B19C5FF6C00E931E8 /* PCGTFSAgencies.m */; };
 		13406A0F19C5FFA800E931E8 /* PCGTFSStops.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A0E19C5FFA800E931E8 /* PCGTFSStops.m */; };
-		13406A1119C5FFD800E931E8 /* another.xml in Resources */ = {isa = PBXBuildFile; fileRef = 13406A1019C5FFD800E931E8 /* another.xml */; };
-		13406A1519C6327200E931E8 /* bmth.xml in Resources */ = {isa = PBXBuildFile; fileRef = 13406A1419C6327200E931E8 /* bmth.xml */; };
 		13406A1819C6347400E931E8 /* PCGTFSRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A1719C6347400E931E8 /* PCGTFSRoutes.m */; };
 		13406A1C19C63BED00E931E8 /* PCGTFSTrips.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A1B19C63BED00E931E8 /* PCGTFSTrips.m */; };
 		13406A1F19C64D2500E931E8 /* PCGTFSStopTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 13406A1E19C64D2500E931E8 /* PCGTFSStopTimes.m */; };
+		1363CA921A5E81FD008FC7AA /* 24.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1363CA911A5E81FD008FC7AA /* 24.xml */; };
+		1363CA941A5E8384008FC7AA /* 1x.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1363CA931A5E8384008FC7AA /* 1x.xml */; };
+		1363CA961A5E83CA008FC7AA /* 16.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1363CA951A5E83CA008FC7AA /* 16.xml */; };
+		1363CA981A5E977B008FC7AA /* 20.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1363CA971A5E977B008FC7AA /* 20.xml */; };
+		139266081A5F2F0400AF8E53 /* m2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 139266071A5F2F0400AF8E53 /* m2.xml */; };
+		13BAB2601A5883110043FA14 /* 1b.xml in Resources */ = {isa = PBXBuildFile; fileRef = 13BAB25F1A5883110043FA14 /* 1b.xml */; };
+		13BAB2621A588C3E0043FA14 /* m1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 13BAB2611A588C3E0043FA14 /* m1.xml */; };
+		13BAB2641A59B9780043FA14 /* 1c.xml in Resources */ = {isa = PBXBuildFile; fileRef = 13BAB2631A59B9780043FA14 /* 1c.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133B5DCA19CDBDE2009FA133 /* PCGTFSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSCalendar.h; sourceTree = "<group>"; };
+		133B5DCB19CDBDE2009FA133 /* PCGTFSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSCalendar.m; sourceTree = "<group>"; };
+		133B5DCD19CDCAEE009FA133 /* PCTransXChangeParseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCTransXChangeParseQueue.h; sourceTree = "<group>"; };
+		133B5DCE19CDCAEE009FA133 /* PCTransXChangeParseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCTransXChangeParseQueue.m; sourceTree = "<group>"; };
+		133B5DD019CDE201009FA133 /* PCCSVBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCSVBuilder.h; sourceTree = "<group>"; };
+		133B5DD119CDE201009FA133 /* PCCSVBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCSVBuilder.m; sourceTree = "<group>"; };
 		134069C319C5FB5300E931E8 /* TransXChangeToGTFS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransXChangeToGTFS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		134069C619C5FB5300E931E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		134069C919C5FB5300E931E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -76,9 +91,7 @@
 		13406A0B19C5FF6C00E931E8 /* PCGTFSAgencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSAgencies.m; sourceTree = "<group>"; };
 		13406A0D19C5FFA800E931E8 /* PCGTFSStops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSStops.h; sourceTree = "<group>"; };
 		13406A0E19C5FFA800E931E8 /* PCGTFSStops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSStops.m; sourceTree = "<group>"; };
-		13406A1019C5FFD800E931E8 /* another.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = another.xml; sourceTree = "<group>"; };
 		13406A1219C600BF00E931E8 /* PCTransXChangeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCTransXChangeKit.h; sourceTree = "<group>"; };
-		13406A1419C6327200E931E8 /* bmth.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bmth.xml; sourceTree = "<group>"; };
 		13406A1619C6347400E931E8 /* PCGTFSRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSRoutes.h; sourceTree = "<group>"; };
 		13406A1719C6347400E931E8 /* PCGTFSRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSRoutes.m; sourceTree = "<group>"; };
 		13406A1919C63A2500E931E8 /* PCTransXChangeDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCTransXChangeDefines.h; sourceTree = "<group>"; };
@@ -86,6 +99,14 @@
 		13406A1B19C63BED00E931E8 /* PCGTFSTrips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSTrips.m; sourceTree = "<group>"; };
 		13406A1D19C64D2500E931E8 /* PCGTFSStopTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGTFSStopTimes.h; sourceTree = "<group>"; };
 		13406A1E19C64D2500E931E8 /* PCGTFSStopTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGTFSStopTimes.m; sourceTree = "<group>"; };
+		1363CA911A5E81FD008FC7AA /* 24.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24.xml; sourceTree = "<group>"; };
+		1363CA931A5E8384008FC7AA /* 1x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 1x.xml; sourceTree = "<group>"; };
+		1363CA951A5E83CA008FC7AA /* 16.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 16.xml; sourceTree = "<group>"; };
+		1363CA971A5E977B008FC7AA /* 20.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 20.xml; sourceTree = "<group>"; };
+		139266071A5F2F0400AF8E53 /* m2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = m2.xml; sourceTree = "<group>"; };
+		13BAB25F1A5883110043FA14 /* 1b.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 1b.xml; sourceTree = "<group>"; };
+		13BAB2611A588C3E0043FA14 /* m1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = m1.xml; sourceTree = "<group>"; };
+		13BAB2631A59B9780043FA14 /* 1c.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 1c.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +131,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13195B9E1A915F790038FCCA /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				134069FA19C5FB6300E931E8 /* Ono.h */,
+				134069FB19C5FB6300E931E8 /* ONOXMLDocument.h */,
+				134069FC19C5FB6300E931E8 /* ONOXMLDocument.m */,
+				133B5DD019CDE201009FA133 /* PCCSVBuilder.h */,
+				133B5DD119CDE201009FA133 /* PCCSVBuilder.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		13195B9F1A915F890038FCCA /* Example Documents */ = {
+			isa = PBXGroup;
+			children = (
+				139266071A5F2F0400AF8E53 /* m2.xml */,
+				1363CA971A5E977B008FC7AA /* 20.xml */,
+				1363CA951A5E83CA008FC7AA /* 16.xml */,
+				1363CA931A5E8384008FC7AA /* 1x.xml */,
+				1363CA911A5E81FD008FC7AA /* 24.xml */,
+				13BAB25F1A5883110043FA14 /* 1b.xml */,
+				13BAB2631A59B9780043FA14 /* 1c.xml */,
+				13BAB2611A588C3E0043FA14 /* m1.xml */,
+			);
+			name = "Example Documents";
+			sourceTree = "<group>";
+		};
 		134069BA19C5FB5300E931E8 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +205,8 @@
 				134069D919C5FB5300E931E8 /* PCAppDelegate.m */,
 				13406A1219C600BF00E931E8 /* PCTransXChangeKit.h */,
 				13406A1919C63A2500E931E8 /* PCTransXChangeDefines.h */,
+				133B5DCD19CDCAEE009FA133 /* PCTransXChangeParseQueue.h */,
+				133B5DCE19CDCAEE009FA133 /* PCTransXChangeParseQueue.m */,
 				13406A0019C5FC3800E931E8 /* PCTransXChangeParseOperation.h */,
 				13406A0119C5FC3800E931E8 /* PCTransXChangeParseOperation.m */,
 				13406A0919C5FEB900E931E8 /* Models */,
@@ -170,11 +220,8 @@
 		134069CD19C5FB5300E931E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				13406A1419C6327200E931E8 /* bmth.xml */,
-				13406A1019C5FFD800E931E8 /* another.xml */,
-				134069FA19C5FB6300E931E8 /* Ono.h */,
-				134069FB19C5FB6300E931E8 /* ONOXMLDocument.h */,
-				134069FC19C5FB6300E931E8 /* ONOXMLDocument.m */,
+				13195B9E1A915F790038FCCA /* Vendor */,
+				13195B9F1A915F890038FCCA /* Example Documents */,
 				134069CE19C5FB5300E931E8 /* TransXChangeToGTFS-Info.plist */,
 				134069CF19C5FB5300E931E8 /* InfoPlist.strings */,
 				134069D219C5FB5300E931E8 /* main.m */,
@@ -219,6 +266,8 @@
 				13406A1B19C63BED00E931E8 /* PCGTFSTrips.m */,
 				13406A1D19C64D2500E931E8 /* PCGTFSStopTimes.h */,
 				13406A1E19C64D2500E931E8 /* PCGTFSStopTimes.m */,
+				133B5DCA19CDBDE2009FA133 /* PCGTFSCalendar.h */,
+				133B5DCB19CDBDE2009FA133 /* PCGTFSCalendar.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -300,12 +349,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13406A1519C6327200E931E8 /* bmth.xml in Resources */,
-				13406A1119C5FFD800E931E8 /* another.xml in Resources */,
+				139266081A5F2F0400AF8E53 /* m2.xml in Resources */,
+				1363CA961A5E83CA008FC7AA /* 16.xml in Resources */,
+				1363CA921A5E81FD008FC7AA /* 24.xml in Resources */,
 				134069D119C5FB5300E931E8 /* InfoPlist.strings in Resources */,
+				1363CA941A5E8384008FC7AA /* 1x.xml in Resources */,
+				1363CA981A5E977B008FC7AA /* 20.xml in Resources */,
 				134069DF19C5FB5300E931E8 /* Images.xcassets in Resources */,
 				134069D719C5FB5300E931E8 /* Credits.rtf in Resources */,
+				13BAB2621A588C3E0043FA14 /* m1.xml in Resources */,
 				134069DD19C5FB5300E931E8 /* MainMenu.xib in Resources */,
+				13BAB2641A59B9780043FA14 /* 1c.xml in Resources */,
+				13BAB2601A5883110043FA14 /* 1b.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,13 +379,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133B5DCC19CDBDE2009FA133 /* PCGTFSCalendar.m in Sources */,
 				13406A0F19C5FFA800E931E8 /* PCGTFSStops.m in Sources */,
 				13406A0C19C5FF6C00E931E8 /* PCGTFSAgencies.m in Sources */,
 				13406A0519C5FE5A00E931E8 /* PCGTFSObject.m in Sources */,
 				134069D319C5FB5300E931E8 /* main.m in Sources */,
+				133B5DCF19CDCAEE009FA133 /* PCTransXChangeParseQueue.m in Sources */,
 				134069FD19C5FB6300E931E8 /* ONOXMLDocument.m in Sources */,
 				13406A0219C5FC3800E931E8 /* PCTransXChangeParseOperation.m in Sources */,
 				13406A1819C6347400E931E8 /* PCGTFSRoutes.m in Sources */,
+				133B5DD219CDE201009FA133 /* PCCSVBuilder.m in Sources */,
 				134069DA19C5FB5300E931E8 /* PCAppDelegate.m in Sources */,
 				13406A1F19C64D2500E931E8 /* PCGTFSStopTimes.m in Sources */,
 				13406A0819C5FE9400E931E8 /* PCTransXChangeDocument.m in Sources */,
@@ -559,6 +617,7 @@
 				134069F619C5FB5300E931E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		134069F719C5FB5300E931E8 /* Build configuration list for PBXNativeTarget "TransXChangeToGTFSTests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +626,7 @@
 				134069F919C5FB5300E931E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

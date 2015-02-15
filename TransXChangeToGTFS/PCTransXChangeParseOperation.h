@@ -14,6 +14,7 @@
 @class PCGTFSRoutes;
 @class PCGTFSTrips;
 @class PCGTFSStopTimes;
+@class PCGTFSCalendar;
 
 @interface PCTransXChangeParseOperation : NSOperation
 
@@ -23,6 +24,8 @@
 @property (nonatomic, strong) PCGTFSRoutes *routes;
 @property (nonatomic, strong) PCGTFSTrips *trips;
 @property (nonatomic, strong) PCGTFSStopTimes *stopTimes;
+@property (nonatomic, strong) PCGTFSCalendar *calendar;
+@property (nonatomic, strong) NSString *outputDirectory;
 
 + (instancetype)operationWithTransXChangeDocument:(PCTransXChangeDocument *)document;
 - (instancetype)initWithTransXChangeDocument:(PCTransXChangeDocument *)document;

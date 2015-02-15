@@ -29,7 +29,7 @@
     
     self.stops = stops;
     
-    NSLog(@"Stops: %@", self.stops);
+//    NSLog(@"Stops: %@", self.stops);
 }
 
 @end

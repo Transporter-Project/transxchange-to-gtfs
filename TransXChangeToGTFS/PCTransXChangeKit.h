@@ -7,6 +7,7 @@
 //
 
 #import "PCTransXChangeDefines.h"
+#import "PCTransXChangeParseQueue.h"
 #import "PCTransXChangeParseOperation.h"
 #import "PCTransXChangeDocument.h" 
 #import "PCGTFSObject.h"
@@ -15,3 +16,4 @@
 #import "PCGTFSRoutes.h"
 #import "PCGTFSTrips.h"
 #import "PCGTFSStopTimes.h"
+#import "PCGTFSCalendar.h"
