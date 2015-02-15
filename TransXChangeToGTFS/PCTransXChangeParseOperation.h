@@ -25,6 +25,7 @@
 @property (nonatomic, strong) PCGTFSTrips *trips;
 @property (nonatomic, strong) PCGTFSStopTimes *stopTimes;
 @property (nonatomic, strong) PCGTFSCalendar *calendar;
+@property (nonatomic, strong) NSString *outputDirectory;
 
 + (instancetype)operationWithTransXChangeDocument:(PCTransXChangeDocument *)document;
 - (instancetype)initWithTransXChangeDocument:(PCTransXChangeDocument *)document;

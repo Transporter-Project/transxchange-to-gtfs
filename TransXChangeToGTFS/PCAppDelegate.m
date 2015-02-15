@@ -12,14 +12,11 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"bmth" ofType:@"xml"];
-    PCTransXChangeDocument *document = [PCTransXChangeDocument documentWithPath:path];
-    
-    
-    
-//    [operation start];
+    PCTransXChangeDocument *document = [PCTransXChangeDocument documentWithPath:[[NSBundle mainBundle] pathForResource:@"m2" ofType:@"xml"]];
+
+    self.queue = [PCTransXChangeParseQueue new];
+    self.queue.outputDirectory = [@"~/Desktop" stringByExpandingTildeInPath];
+    [self.queue addTransXChangeDocuments:@[document]];
 }
 
 @end

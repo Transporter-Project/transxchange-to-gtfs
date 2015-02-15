@@ -21,79 +21,89 @@
         
         NSString *lineRef = [[vehicleJourneyElement firstChildWithTag:@"LineRef"] stringValue];
         
-        if (![currentServiceIdentifiers containsObject:lineRef]) {
+        NSMutableDictionary *calendar = [NSMutableDictionary new];
+        calendar[PCGTFSServiceIdentifierKey] = [[vehicleJourneyElement firstChildWithTag:@"VehicleJourneyCode"] stringValue];
+        calendar[PCGTFSCalendarMondayKey] = @(0);
+        calendar[PCGTFSCalendarTuesdayKey] = @(0);
+        calendar[PCGTFSCalendarWednesdayKey] = @(0);
+        calendar[PCGTFSCalendarThursdayKey] = @(0);
+        calendar[PCGTFSCalendarFridayKey] = @(0);
+        calendar[PCGTFSCalendarSaturdayKey] = @(0);
+        calendar[PCGTFSCalendarSundayKey] = @(0);
+        
+        ONOXMLElement *daysOfWeekElement = [[[vehicleJourneyElement firstChildWithTag:@"OperatingProfile"] firstChildWithTag:@"RegularDayType"] firstChildWithTag:@"DaysOfWeek"];
+
+        __block BOOL hasAtLeastOneDay = false;
+        
+        [daysOfWeekElement.children enumerateObjectsUsingBlock:^(ONOXMLElement *dayOfWeekElement, NSUInteger idx, BOOL *stop) {
             
-            NSMutableDictionary *calendar = [NSMutableDictionary new];
-            calendar[PCGTFSServiceIdentifierKey] = lineRef;
-            calendar[PCGTFSCalendarMondayKey] = @(0);
-            calendar[PCGTFSCalendarTuesdayKey] = @(0);
-            calendar[PCGTFSCalendarWednesdayKey] = @(0);
-            calendar[PCGTFSCalendarThursdayKey] = @(0);
-            calendar[PCGTFSCalendarFridayKey] = @(0);
-            calendar[PCGTFSCalendarSaturdayKey] = @(0);
-            calendar[PCGTFSCalendarSundayKey] = @(0);
+            NSString *dayOfWeek = [dayOfWeekElement tag];
+                            
+            if ([dayOfWeek isEqualToString:@"MondayToFriday"]) {
+                
+                calendar[PCGTFSCalendarMondayKey] = @(1);
+                calendar[PCGTFSCalendarTuesdayKey] = @(1);
+                calendar[PCGTFSCalendarWednesdayKey] = @(1);
+                calendar[PCGTFSCalendarThursdayKey] = @(1);
+                calendar[PCGTFSCalendarFridayKey] = @(1);
+                hasAtLeastOneDay = true;
+            }
             
-            ONOXMLElement *daysOfWeekElement = [[[vehicleJourneyElement firstChildWithTag:@"OperatingProfile"] firstChildWithTag:@"RegularDayType"] firstChildWithTag:@"DaysOfWeek"];
- 
-            [daysOfWeekElement.children enumerateObjectsUsingBlock:^(ONOXMLElement *dayOfWeekElement, NSUInteger idx, BOOL *stop) {
-                
-                NSString *dayOfWeek = [dayOfWeekElement tag];
-                                
-                if ([dayOfWeek isEqualToString:@"MondayToFriday"]) {
-                    
-                    calendar[PCGTFSCalendarMondayKey] = @(1);
-                    calendar[PCGTFSCalendarTuesdayKey] = @(1);
-                    calendar[PCGTFSCalendarWednesdayKey] = @(1);
-                    calendar[PCGTFSCalendarThursdayKey] = @(1);
-                    calendar[PCGTFSCalendarFridayKey] = @(1);
-                }
-                
-                if ([dayOfWeek isEqualToString:@"Monday"]) {
-                    calendar[PCGTFSCalendarMondayKey] = @(1);
-                }
-                
-                if ([dayOfWeek isEqualToString:@"Tuesday"]) {
-                    calendar[PCGTFSCalendarTuesdayKey] = @(1);
-                }
-                
-                if ([dayOfWeek isEqualToString:@"Wednesday"]) {
-                    calendar[PCGTFSCalendarWednesdayKey] = @(1);
-                }
-                
-                if ([dayOfWeek isEqualToString:@"Thursday"]) {
-                    calendar[PCGTFSCalendarThursdayKey] = @(1);
-                }
-                
-                if ([dayOfWeek isEqualToString:@"Friday"]) {
-                    calendar[PCGTFSCalendarFridayKey] = @(1);
-                }
-                
-                if ([dayOfWeek isEqualToString:@"Saturday"]) {
-                    calendar[PCGTFSCalendarSaturdayKey] = @(1);
-                }
-                
-                if ([dayOfWeek isEqualToString:@"Sunday"]) {
-                    calendar[PCGTFSCalendarSundayKey] = @(1);
-                }
-            }];
+            if ([dayOfWeek isEqualToString:@"Monday"]) {
+                calendar[PCGTFSCalendarMondayKey] = @(1);
+                hasAtLeastOneDay = true;
+            }
             
-            ONOXMLElement *serviceElement = [self serviceElementForServiceCode:lineRef];
-            ONOXMLElement *operatingPeriodElement = [serviceElement firstChildWithTag:@"OperatingPeriod"];
+            if ([dayOfWeek isEqualToString:@"Tuesday"]) {
+                calendar[PCGTFSCalendarTuesdayKey] = @(1);
+                hasAtLeastOneDay = true;
+            }
             
-            NSString *startDateString = [[operatingPeriodElement firstChildWithTag:@"StartDate"] stringValue];
-            NSString *endDateString = [[operatingPeriodElement firstChildWithTag:@"EndDate"] stringValue];
+            if ([dayOfWeek isEqualToString:@"Wednesday"]) {
+                calendar[PCGTFSCalendarWednesdayKey] = @(1);
+                hasAtLeastOneDay = true;
+            }
             
-            calendar[PCGTFSCalendarStartDateKey] = [startDateString stringByReplacingOccurrencesOfString:@"-" withString:@""];
-            calendar[PCGTFSCalendarEndDateKey] = [endDateString stringByReplacingOccurrencesOfString:@"-" withString:@""];
+            if ([dayOfWeek isEqualToString:@"Thursday"]) {
+                calendar[PCGTFSCalendarThursdayKey] = @(1);
+                hasAtLeastOneDay = true;
+            }
             
-            [currentServiceIdentifiers addObject:lineRef];
+            if ([dayOfWeek isEqualToString:@"Friday"]) {
+                calendar[PCGTFSCalendarFridayKey] = @(1);
+                hasAtLeastOneDay = true;
+            }
+            
+            if ([dayOfWeek isEqualToString:@"Saturday"]) {
+                calendar[PCGTFSCalendarSaturdayKey] = @(1);
+                hasAtLeastOneDay = true;
+            }
+            
+            if ([dayOfWeek isEqualToString:@"Sunday"]) {
+                calendar[PCGTFSCalendarSundayKey] = @(1);
+                hasAtLeastOneDay = true;
+            }
+        }];
+        
+        ONOXMLElement *serviceElement = [self serviceElementForServiceCode:lineRef];
+        ONOXMLElement *operatingPeriodElement = [serviceElement firstChildWithTag:@"OperatingPeriod"];
+        
+        NSString *startDateString = [[operatingPeriodElement firstChildWithTag:@"StartDate"] stringValue];
+        NSString *endDateString = [[operatingPeriodElement firstChildWithTag:@"EndDate"] stringValue];
+        
+        calendar[PCGTFSCalendarStartDateKey] = [startDateString stringByReplacingOccurrencesOfString:@"-" withString:@""];
+        calendar[PCGTFSCalendarEndDateKey] = [endDateString stringByReplacingOccurrencesOfString:@"-" withString:@""];
+        
+        [currentServiceIdentifiers addObject:lineRef];
+    
+        if (hasAtLeastOneDay) {
             [calendars addObject:calendar];
         }
     }];
     
     self.calendars = calendars;
             
-    NSLog(@"Calendars: %@", self.calendars);
+//    NSLog(@"Calendars: %@", self.calendars);
 }
 
 - (ONOXMLElement *)serviceElementForServiceCode:(NSString *)serviceCode

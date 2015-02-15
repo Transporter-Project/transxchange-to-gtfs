@@ -30,7 +30,7 @@
 
     self.agencies = agencies;
     
-    NSLog(@"Agencies: %@", self.agencies);
+//    NSLog(@"Agencies: %@", self.agencies);
 }
 
 @end

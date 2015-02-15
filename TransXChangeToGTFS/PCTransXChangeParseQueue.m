@@ -16,6 +16,7 @@
     [documents enumerateObjectsUsingBlock:^(PCTransXChangeDocument *document, NSUInteger idx, BOOL *stop) {
         
         PCTransXChangeParseOperation *operation = [PCTransXChangeParseOperation operationWithTransXChangeDocument:document];
+        operation.outputDirectory = self.outputDirectory;
         [self addOperation:operation];
     }];
 }

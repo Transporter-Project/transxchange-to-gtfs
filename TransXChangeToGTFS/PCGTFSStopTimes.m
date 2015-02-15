@@ -56,7 +56,7 @@
     
     self.stopTimes = stopTimes;
     
-    NSLog(@"Stop Times: %@", self.stopTimes);
+//    NSLog(@"Stop Times: %@", self.stopTimes);
 }
 
 - (ONOXMLElement *)journeyPatternElementForIdentifier:(NSString *)identifier
